@@ -2,6 +2,7 @@ import React from 'react'
 import { cleanData } from './helpers'
 import Image from './children/image'
 import styles from './styles'
+import UserBlock from './children/user_block'
 import LikeSection from './children/like_section'
 
 const App = ({ data }) => {
@@ -13,7 +14,7 @@ const App = ({ data }) => {
         <Image imgData={imgData} />
       </div>
       <div style={styles.text}>
-        <p>User block</p>
+        <UserBlock ownerData={ownerData} />
         <p>Comments block</p>
         <LikeSection likeData={postLikeData} />
       </div>
