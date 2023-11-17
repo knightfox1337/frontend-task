@@ -7,7 +7,7 @@ import LikeSection from './children/like_section'
 import CommentSection from './children/comment_section'
 
 const App = ({ data }) => {
-  const {imgData, ownerData, postLikeData, commentData} = cleanData(data)
+  const { imgData, ownerData, postLikeData, commentData } = cleanData(data)
 
   return (
     <main style={styles.main}>
