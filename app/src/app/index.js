@@ -1,8 +1,8 @@
 import React from 'react'
 import { cleanData } from './helpers'
 import Image from './children/image'
-import LikeButton from './children/like_button'
 import styles from './styles'
+import LikeSection from './children/like_section'
 
 const App = ({ data }) => {
   const {imgData, ownerData, postLikeData, commentData} = cleanData(data)
@@ -15,7 +15,7 @@ const App = ({ data }) => {
       <div style={styles.text}>
         <p>User block</p>
         <p>Comments block</p>
-        <LikeButton />
+        <LikeSection likeData={postLikeData} />
       </div>
     </main>
   )
